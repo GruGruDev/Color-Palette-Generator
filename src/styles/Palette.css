@@ -31,3 +31,13 @@ button:hover {
   background-color: #3700b3;
   transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+  .color-box-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
