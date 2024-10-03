@@ -4,6 +4,10 @@
     padding: 10px;
   }
 
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
   .color-box-container {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
