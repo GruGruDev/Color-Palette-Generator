@@ -1,43 +1,29 @@
 /* src/styles/Palette.css */
-.palette {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 1200px;
-}
-
-.color-box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+.saved-palettes {
+  margin: 20px 0;
+  text-align: left;
   width: 100%;
 }
 
-button {
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background-color: #6200ea;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 25px;
-  transition: background-color 0.3s, transform 0.2s;
-  font-size: 14px;
-  font-weight: bold;
+.saved-palettes h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #3700b3;
-  transform: translateY(-2px);
+.saved-palettes .saved-palette {
+  display: flex;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
-@media (max-width: 768px) {
-  .color-box-container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
 
-  button {
-    padding: 8px 15px;
-    font-size: 12px;
-  }
+.saved-palettes .saved-palette:hover {
+  background-color: #eaeaea;
+}
+
+.saved-palettes .saved-palette div {
+  margin-right: 5px;
+  border-radius: 50%;
 }
